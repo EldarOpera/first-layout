@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+#main-title {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    text-align: center;
+}
+
+#my-photo {
+    text-align: center;
+}
+
+section h2 {
+    padding: 0;
+    font-size: 23px;
+    text-align: left;
+    border: none;
+}
+  
+h3 {
+    margin-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+main {
+    width: 900px;
+    margin: auto;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
