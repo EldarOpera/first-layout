@@ -1,54 +1,153 @@
+@font-face {
+    font-family: BitterPro-Regular;
+    src: url("./fonts/BitterPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: BitterPro-Bold;
+    src: url("./fonts/BitterPro-Bold.ttf");
+}
+
 body {
-    color: #333;
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
+    height: auto;
+    width: auto;
+    margin: 0;  
+
+    font: 18px/1.5 BitterPro-Regular, sans-serif;
+
+    background-image: linear-gradient(135deg, #4158d0 0%, #c850c0 40%,#ffcc70 90%);
+    overflow-x: hidden;
 }
 
 main {
+    height: auto;
     width: 900px;
-    margin: auto;
+    
+    margin: 0px auto 50px;
+    padding: auto;
+    
+    background: center / 1rem, no-repeat, rgb(230, 235, 240); 
+    border-radius: 15px;
+    
+}
+
+header {
+    margin: 0;
+    padding: 20px 0px 20px;
 }
 
 #main-title {
-    margin-top: 40px;
-    margin-bottom: 20px;
     font-size: 45px;
     text-align: center;
+    color: aliceblue;
+
+    margin-bottom: 20px;
 }
 
-#my-photo {
+#greetings {
+    font-size: 25px;
     text-align: center;
+    color: rgb(27, 27, 27);
 }
 
-section {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 50px;
-    padding-right: 50px;
+.pic-section {
+    margin: 0;
+    padding: 50px 0px 50px;
+
+    position: relative;
 }
 
-section h2 {
+.pic-section .my-photo {
+    height: auto;
+    width: 250px;
+    
+    border: 2px solid;
+
+    position: relative;
+    left: 35%;
+}
+
+.pic-section .appearing {
+    height: 120px;
+    width: 200px;
+
+    background: url(./media/its-me.png) center / 12em;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 35%;
+    right: 40%;
+
+    opacity: 0;
+
+    transition: 0.8s;
+}
+
+.pic-section:hover > .appearing {
+    right: 16%;
+    opacity: 1;
+}
+
+.articles {
+    height: auto;
+    width: auto;
+
+    padding: 30px 50px;
+}
+
+.subtitles {
+    margin: 0;
     padding: 0;
-    font-size: 23px;
+    font-size: 22px;
     text-align: left;
     border: none;
 }
-  
-h3 {
-    margin-top: 0px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 25px;
-    text-align: center;
-    border-bottom: 2px solid #e3e3e3;
+
+section ul li {
+    margin-bottom: 10px;
 }
 
-li {
-    margin-bottom: 10px;
+/* .hexlet-ul li {  //  ВСТАВИТЬ КАРТИНКУ ВМЕСТО КРУЖКА В li СПИСОК.
+    position: relative;
+  
+    margin-bottom: 20px;
+}
+  
+.hexlet-ul li::before {
+    position: absolute;
+    left: -30px;
+  
+    width: 20px;
+    height: 20px;
+  
+    background-image: url("https://assets.codepen.io/1425525/hexlet_logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    content: "";
+} */
+
+
+
+.list {
+    list-style-type: circle;
+}
+
+.btn {
+    font-family: BitterPro-Regular, sans-serif;
+    font-size: 1em;
+    
+    background-color: #44c455;
+    border: 1px solid;
+    border-radius: 13px;
+    cursor: pointer;
+
+    position: relative;
+    bottom: 0;
+    transition: 0.2s;
+} 
+
+.btn:hover {
+    bottom: 2px;
+    background-color: #47bbad;
 }
