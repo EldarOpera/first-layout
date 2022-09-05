@@ -11,12 +11,15 @@ const startRound = () => {
   const randomNumber2 = generateRandomNumber();
   const answer = prompt(`Определите сумму чисел ${randomNumber1} и ${randomNumber2}. Введите ваш ответ:`);
   const correctAnswer = sum(randomNumber1, randomNumber2);
-    
+  
+  if (answer === '' || answer === ' ') {
+    alert("Не оставляйте поле пустым. Введите ответ!")
+    return true;
   if (answer === `${correctAnswer}`) {
-    alert("Верно!");
+    alert("Верно!")
     return true;
   } else {
-    alert(`Неверно! Правильный ответ: ${correctAnswer}`);
+    alert(`Неверно! Правильный ответ: ${correctAnswer}`)
     return false;
   }
 };
