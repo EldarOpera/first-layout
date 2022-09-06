@@ -57,7 +57,7 @@ header {
     position: relative;
 }
 
-.pic-section .my-photo {
+.my-photo {
     height: auto;
     width: 250px;
     
@@ -65,9 +65,11 @@ header {
 
     position: relative;
     left: 35%;
+    
+    z-index: 1;
 }
 
-.pic-section .appearing {
+.appearing {
     height: 120px;
     width: 200px;
 
