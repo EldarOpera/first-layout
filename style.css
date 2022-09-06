@@ -151,3 +151,25 @@ section ul li {
     bottom: 2px;
     background-color: #47bbad;
 }
+
+.scroll-up {
+    height: 70px;
+    width: 70px;
+
+    margin: 0;
+    padding: 0;
+
+    background: url(./media/up.png) center / 5em;
+    border-radius: 60px;
+
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    transition: 0.5s;
+    
+    cursor: pointer;
+}
+
+.scroll-up:hover {
+    bottom: 35px;
+}
