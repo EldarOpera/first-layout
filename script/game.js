@@ -26,7 +26,7 @@ const startRound = () => {
 };
   
 const startGame = () => {
-    for (let i = 0; i < 3; i += 1) {
+    for (let i = 0; i < 5; i += 1) {
       const isCorrect = startRound();
       if (!isCorrect) {
         alert("В следующий раз используй калькулятор :)");
