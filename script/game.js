@@ -15,6 +15,7 @@ const startRound = () => {
   if (answer === '' || answer === ' ') {
     alert("Не оставляйте поле пустым. Введите ответ!")
     return true;
+  }
   if (answer === `${correctAnswer}`) {
     alert("Верно!")
     return true;
