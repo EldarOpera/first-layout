@@ -123,6 +123,12 @@ section ul li {
     list-style-type: circle;
 }
 
+.articles p {
+    font-size: 1em;
+
+    margin: 15px 30px 10px;
+}
+
 .btn {
     font-size: 1em;
     color: #333;
