@@ -1,10 +1,10 @@
 @font-face {
-    font-family: BitterPro-Regular;
+    font-family: BitterPro-Regular sans-serif;
     src: url("./fonts/BitterPro-Regular.ttf");
 }
 
 @font-face {
-    font-family: BitterPro-Bold;
+    font-family: BitterPro-Bold sans-serif;
     src: url("./fonts/BitterPro-Bold.ttf");
 }
 
