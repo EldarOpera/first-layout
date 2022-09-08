@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-        <meta charset="UTF-8" />
-        <title>Моя страница</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="./script/game.js"></script>
-        <script src="./script/scroll-up.js"></script>
+    <meta charset="UTF-8" />
+    <title>Моя страница</title>    
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script/game.js"></script>
+    <script src="./script/scroll-up.js"></script>
 </head>
 <body>
     <header>
-            <h1 id="main-title">Всем большой 'Hello, World!'</h1>
-            <h3 id="greetings">Меня зовут Эльдар Ахмедов, и я приветствую вас на своём островке Интернета! 😎</h3>
-    </header>
+        <h1 id="main-title">Всем большой 'Hello, World!'</h1>
+        <h3 id="greetings">Меня зовут Эльдар Ахмедов, и я приветствую вас на своём островке Интернета!</h3>
+    </header>    
     <main>
         <section class="pic-section">
             <div class="appearing"></div>
-            <img src="./media/my-photo.jpg" alt="It's me!" class="my-photo"/>
+            <img class="my-photo" src="./media/me.jpg" alt="It's me!" />
         </section>
         <section class="articles">
             <h2 class="subtitles">Расскажу немного о себе:</h2>
-            <ul class="list">
+            <ul>
                 <li>24 года</li>
-                <li><span>Профессионально занимаюсь <em>классическим вокалом</em></li>
+                <li><span>Профессионально занимаюсь <em>оперным вокалом</em></li>
                 <li>В последнее время сильно увлекся программированием</li>
                 <li>Хочу освоить <b>Frontend-разработку</b>, чтобы иметь за плечами конкуретный навык</li>
             </ul>
@@ -32,7 +32,7 @@
         </section>
         <section class="articles">
             <h2 class="subtitles">Увлечения:</h2>
-            <ul class="list">
+            <ul>
                 <li>Горные и водные лыжи</li>
                 <li>Природа во всех её проявлениях</li>
                 <li>Общение с классными и интересными людьми</li>
@@ -40,5 +40,5 @@
         </section>
         <div class="scroll-up" href="#" onclick="return up()"></div>
     </main>
-</body>
+</body>        
 </html>
