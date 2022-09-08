@@ -11,48 +11,50 @@
 body {
     height: auto;
     width: auto;
-    margin: 0;  
-
-    font: 18px/1.5 BitterPro-Regular, sans-serif;
-
+    margin: 0;
+    
+    font: 18px/1.5 BitterPro-Regular sans-serif;
+    
     background-image: linear-gradient(135deg, #4158d0 0%, #c850c0 40%,#ffcc70 90%);
     overflow-x: hidden;
 }
 
-main {
-    height: auto;
-    width: 900px;
-    
-    margin: 0px auto 50px;
-    padding: auto;
-    
-    background: center / 1rem, no-repeat, rgb(230, 235, 240); 
-    border-radius: 15px;
-    
-}
-
 header {
-    margin: 0;
-    padding: 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 30px;
 }
 
 #main-title {
+    margin: 0 0 30px;
+    
     font-size: 45px;
     text-align: center;
     color: aliceblue;
-
-    margin-bottom: 20px;
 }
 
 #greetings {
-    font-size: 25px;
+    margin: 0;
     text-align: center;
-    color: rgb(27, 27, 27);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+    width:max-content;
+
+    margin: 20px auto 30px;
+    padding: 0;
+
+    background-color: aliceblue;
+    border-radius: 15px;;
 }
 
 .pic-section {
     margin: 0;
-    padding: 50px 0px 50px;
+    padding: 50px 0px 30px;
 
     position: relative;
 }
@@ -61,11 +63,11 @@ header {
     height: auto;
     width: 250px;
     
-    border: 2px solid;
-
     position: relative;
     left: 35%;
-    
+
+    border: 2px solid #333;
+
     z-index: 1;
 }
 
@@ -73,85 +75,63 @@ header {
     height: 120px;
     width: 200px;
 
-    background: url(./media/its-me.png) center / 12em;
-    border-radius: 20px;
-
     position: absolute;
     top: 35%;
     right: 40%;
 
-    opacity: 0;
+    background: url(./media/its-me.png) center / 12em;
+    border-radius: 10px;
 
-    transition: 0.8s;
+    opacity: 0;
+    z-index: 0;
+
+    transition: 0.5s;
 }
 
 .pic-section:hover > .appearing {
-    right: 16%;
+    right: 13%;
     opacity: 1;
 }
 
 .articles {
-    height: auto;
-    width: auto;
-
+    margin: 0;
     padding: 30px 50px;
 }
 
 .subtitles {
     margin: 0;
     padding: 0;
-    font-size: 22px;
+
+    font-size: 23px;
     text-align: left;
+
     border: none;
 }
 
 section ul li {
     margin-bottom: 10px;
-}
-
-/* .hexlet-ul li {  //  ВСТАВИТЬ КАРТИНКУ ВМЕСТО КРУЖКА В li СПИСОК.
-    position: relative;
-  
-    margin-bottom: 20px;
-}
-  
-.hexlet-ul li::before {
-    position: absolute;
-    left: -30px;
-  
-    width: 20px;
-    height: 20px;
-  
-    background-image: url("https://assets.codepen.io/1425525/hexlet_logo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-    content: "";
-} */
-
-
-
-.list {
     list-style-type: circle;
 }
 
 .btn {
-    font-family: BitterPro-Regular, sans-serif;
     font-size: 1em;
-    
-    background-color: #44c455;
-    border: 1px solid;
-    border-radius: 13px;
-    cursor: pointer;
+    color: #333;
+
+    background-color: rgb(147, 217, 235);
+    border: 1px solid #333;
+    border-radius: 10px;
 
     position: relative;
     bottom: 0;
     transition: 0.2s;
-} 
+
+    cursor: pointer;
+}
 
 .btn:hover {
+    color: aliceblue;
+    background-color: rgb(131, 214, 110);
     bottom: 2px;
-    background-color: #47bbad;
 }
 
 .scroll-up {
