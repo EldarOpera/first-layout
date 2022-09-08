@@ -1,16 +1,22 @@
 @font-face {
     font-family: BitterPro-Regular sans-serif;
-    src: url("./fonts/BitterPro-Regular.ttf");
+    src: url(./fonts/BitterPro-Regular.ttf);
 }
 
 @font-face {
     font-family: BitterPro-Bold sans-serif;
-    src: url("./fonts/BitterPro-Bold.ttf");
+    src: url(./fonts/BitterPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: BitterPro-Italic sans-serif;
+    src: url(./fonts/BitterPro-Italic.ttf);
 }
 
 body {
     height: auto;
     width: auto;
+    
     margin: 0;
     
     font: 18px/1.5 BitterPro-Regular sans-serif;
@@ -43,7 +49,7 @@ main {
     flex-direction: column;
     
     height: auto;
-    width:max-content;
+    width: max-content;
 
     margin: 20px auto 30px;
     padding: 0;
