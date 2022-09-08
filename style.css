@@ -14,7 +14,7 @@
 }
 
 body {
-    height: auto;
+    height: 100%;
     width: auto;
     
     margin: 0;
@@ -66,11 +66,15 @@ main {
 }
 
 .my-photo {
-    height: auto;
-    width: 250px;
+    height: 338px;
+    width: 255px;
+
+    margin: 0;
     
     position: relative;
     left: 35%;
+
+    background: no-repeat url(./media/my-photo.jpg) center / 100%;
 
     border: 2px solid #333;
 
@@ -95,7 +99,7 @@ main {
 }
 
 .pic-section:hover > .appearing {
-    right: 13%;
+    right: 12%;
     opacity: 1;
 }
 
