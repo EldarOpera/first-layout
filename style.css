@@ -118,7 +118,7 @@ main {
     border: none;
 }
 
-section ul li {
+.articles ul li {
     margin-bottom: 10px;
     list-style-type: circle;
 }
