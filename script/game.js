@@ -9,14 +9,15 @@ const sum = (num1, num2) => {
 const startRound = () => {
   const randomNumber1 = generateRandomNumber();
   const randomNumber2 = generateRandomNumber();
-  const answer = prompt(`Определите сумму чисел ${randomNumber1} и ${randomNumber2}. Введите ваш ответ:`);
-  const correctAnswer = sum(randomNumber1, randomNumber2);
-  
-  if (answer === '' || answer === ' ') {
+  const correctAnswer = `${sum(randomNumber1, randomNumber2)}`;
+  let answer = prompt(`Определите сумму чисел ${randomNumber1} и ${randomNumber2}. Введите ваш ответ:`);
+  answer = answer.trim();
+
+  if (answer === '') {
     alert("Не оставляйте поле пустым. Введите ответ!")
     return true;
   }
-  if (answer === `${correctAnswer}`) {
+  if (answer === correctAnswer) {
     alert("Верно!")
     return true;
   } else {
