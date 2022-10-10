@@ -16,7 +16,6 @@
 body {
     height: 100%;
     width: auto;
-    
     margin: 0;
     
     font: 18px/1.5 BitterPro-Regular sans-serif;
@@ -56,13 +55,14 @@ main {
 
     background-color: aliceblue;
     border-radius: 15px;
+    box-shadow: -1px 1px 6px 0px rgba(12, 27, 43, 0.555);
 }
 
 .pic-section {
     margin: 0;
     padding: 50px 0px 30px;
-    
-    dispay: flex;
+
+    display: flex;
     justify-content: center;
 
     position: relative;
@@ -72,8 +72,8 @@ main {
     height: 338px;
     width: 255px;
     margin: 0;
-
-    background: no-repeat url(./media/my-photo.jpg) center / 100%;
+    
+    background: url(./media/my-photo.jpg) no-repeat center / 100%;
 
     border: 2px solid #333;
 
